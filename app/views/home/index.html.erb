@@ -1,0 +1,5 @@
+<%= javascript_tag do %>
+    var products = <%= raw(@products.to_json) %>
+<% end %>
+  
+  <%= content_tag(:div, "", id: "app") %>
